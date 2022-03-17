@@ -1,13 +1,4 @@
-#
-# Debian Dockerfile
-#
-# https://github.com/yangqi/docker-debian
-#
-
-# Pull base image.
-FROM debian:8.1
-
-MAINTAINER Qi Yang <i@yangqi.me>
+FROM debian:10
 
 # Install.
 RUN \
@@ -27,4 +18,4 @@ ENV HOME /root
 WORKDIR /root
 
 # Define default command.
-CMD ["bash"]
+CMD ["/bin/bash"]
